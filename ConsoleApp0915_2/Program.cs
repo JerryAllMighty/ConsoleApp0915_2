@@ -51,13 +51,13 @@ namespace ConsoleApp0915_2
         //출금
         public string OutputMoney(int amount)
         {
-            if (balance < amount)
+            if (balance < amount + 500)     //출금하려는 값 + 수수료 500원보다 잔액이 많아야 한다
             {
                 string msg = "잔액이 부족합니다";
                 return msg;
             }
 
-            balance = balance - amount;
+            balance = balance - amount - 500;       //수수료가 500원
             return "";
         }
         /*
