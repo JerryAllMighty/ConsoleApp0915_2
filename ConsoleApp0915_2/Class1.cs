@@ -20,7 +20,7 @@ namespace ConsoleApp0915_2
     class Class1
     {
 
-
+            
 
         static void Main()
         {
